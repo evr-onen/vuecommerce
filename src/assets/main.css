@@ -1,0 +1,76 @@
+@import './style/global.css';
+@import './style/sideMenuIcons.css';
+@import './style/swiper.css';
+@import 'swiper/css/navigation';
+/* @import 'vuetify/styles'; */
+
+@layer tailwind-base, primevue, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+@layer base {
+  html {
+    font-family: 'Krub', sans-serif;
+    @apply text-text font-medium;
+  }
+}
+
+body {
+  font-size: 0.875rem;
+}
+
+@layer base {
+  a {
+    @apply normal-case;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.17rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 0.83rem;
+  }
+
+  h6 {
+    font-size: 0.67rem;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type='number'] {
+  appearance: textfield; /* Firefox */
+}
+
+.dangerButtonStyle {
+  @apply !bg-danger/50 hover:!bg-danger/80 duration-300;
+}
+
+.swiper-pagination {
+  top: 4rem;
+}

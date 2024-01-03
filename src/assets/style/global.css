@@ -1,0 +1,42 @@
+.page {
+  @apply flex justify-center min-h-[85vh] w-full;
+}
+.page-wrapper {
+  @apply max-w-[1240px] w-full;
+}
+.buttonStyle {
+  @apply block py-2 text-base w-full rounded-2xl text-white text-center hover:!bg-linkHover !bg-secondary capitalize;
+}
+
+.adminShadow {
+  box-shadow: rgba(115, 103, 240, 0.48) 0px 2px 6px 0px;
+}
+
+.selectedMenu {
+  background: linear-gradient(72.47deg, #7367f0 22.16%, rgba(115, 103, 240, 0.7) 76.47%);
+}
+
+.shadow {
+  box-shadow: 0 0.125rem 0.25rem rgba(165, 163, 174, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom right, #4d7fff 0%, #2b758e 100%);
+  border-radius: 5px;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  @apply bg-cyan-300 text-cyan-950;
+}
+.no-select {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+.toast-height {
+  height: 120px;
+}
+.toastTitle {
+  @apply !text-sm;
+}
